@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(266, 75%, 66%),
+    hsl(258, 75%, 66%),
+    hsl(249, 74%, 65%),
+    hsl(240, 73%, 65%)
+  );
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(273, 75%, 66%);
+}
+
+.text__center {
+  text-align: center;
+}
+
+.py {
+  padding: 5px 0;
+}
+
+.bg__black {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(273, 75%, 66%);
+}
+
+a:hover {
+  color: hsl(273, 42%, 25%);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main__col {
+  /* TODO: */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  border-radius: 25px;
+  height: 70vh;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0px 18px 18px 0px #5742b9;
+}
+
+.col {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woman {
+  background-image: url("../images/illustration-woman-online-desktop.svg"),
+    url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -78px 68px, -571px -308px;
+}
+
+.box {
+  position: relative;
+  left: -261px;
+  bottom: -28px;
+}
+
+.box-2 {
+  display: none;
+}
+
+.h1 {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.accordion {
+  width: 338px;
+}
+
+.accordion__item {
+  width: 100%;
+}
+
+.divider {
+  border: 0.5px solid hsl(240, 5%, 91%);
+}
+
+.accordion__header {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.accordion__header > button:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion__button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  width: 100%;
+  font-weight: 700;
+  color: hsl(240, 6%, 50%);
+  cursor: pointer;
+  outline: none;
+}
+
+.accordion__arrow {
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.accordion__rotate__arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__collapse {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  height: 70px;
+  width: 100%;
+}
+
+.accordion__body {
+  text-align: left;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.test {
+  line-height: 1.5;
+}
+
+.d__none {
+  display: none;
+}
+
+.active {
+  color: hsl(237, 12%, 33%);
+}
+
+.footer {
+  padding: 10px 0;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  line-height: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 1439.98px) {
+  .header {
+    margin-bottom: 38px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: initial;
+    position: relative;
+    bottom: -38px;
+    width: 100%;
+    height: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 38px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .woman {
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 138px;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .box-2 {
+    display: block;
+    position: relative;
+    top: -78px;
+    left: -14px;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 68px;
+  }
+}

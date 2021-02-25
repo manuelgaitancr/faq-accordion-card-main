@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <header class="header bg__black py" id="header">
+      <h1 class="text__center">Challenge 🚀</h1>
+    </header>
+    <main class="main" id="main">
+      <div class="container">
+        <div class="row">
+          <div class="main__col">
+            <div class="card">
+              <div class="col woman">
+                <img
+                  class="box"
+                  src="./images/illustration-box-desktop.svg"
+                  alt="Box"
+                />
+                <img
+                  class="box-2"
+                  src="./images/illustration-woman-online-mobile.svg"
+                  alt=""
+                />
+              </div>
+              <div class="col">
+                <div class="accordion">
+                  <h1 class="h1">FAQ</h1>
+                  <div class="accordion__item">
+                    <h2 class="accordion__header">
+                      <button class="accordion__button" id="accordion__button">
+                        How many team members can I invite?
+                        <span class="accordion__container__arrow">
+                          <img
+                            src="./images/icon-arrow-down.svg"
+                            class="accordion__arrow"
+                            alt="Icon arrow"
+                          />
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion__collapse d__none">
+                      <div class="accordion__body">
+                        <p class="test">
+                          You can invite up to 2 additional users on the Free
+                          plan. There is no limit on team members for the
+                          Premium plan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                  <div class="accordion__item">
+                    <h2 class="accordion__header">
+                      <button class="accordion__button" id="accordion__button">
+                        What is the maximum file upload size?
+                        <span class="accordion__container__arrow">
+                          <img
+                            src="./images/icon-arrow-down.svg"
+                            class="accordion__arrow"
+                            alt="Icon arrow"
+                          />
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion__collapse d__none">
+                      <div class="accordion__body">
+                        <p class="test">
+                          No more than 2GB. All files in your account must fit
+                          your allotted storage space.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                  <div class="accordion__item">
+                    <h2 class="accordion__header">
+                      <button class="accordion__button" id="accordion__button">
+                        How do I reset my password?
+                        <span class="accordion__container__arrow">
+                          <img
+                            src="./images/icon-arrow-down.svg"
+                            class="accordion__arrow"
+                            alt="Icon arrow"
+                          />
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion__collapse d__none">
+                      <div class="accordion__body">
+                        <p class="test">
+                          Click “Forgot password” from the login page or “Change
+                          password” from your profile page. A reset link will be
+                          emailed to you.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                  <div class="accordion__item">
+                    <h2 class="accordion__header">
+                      <button class="accordion__button" id="accordion__button">
+                        Can I cancel my subscription?
+                        <span class="accordion__container__arrow">
+                          <img
+                            src="./images/icon-arrow-down.svg"
+                            class="accordion__arrow"
+                            alt="Icon arrow"
+                          />
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion__collapse d__none">
+                      <div class="accordion__body">
+                        <p class="test">
+                          Yes! Send us a message and we’ll process your request
+                          no questions asked.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                  <div class="accordion__item">
+                    <h2 class="accordion__header">
+                      <button class="accordion__button" id="accordion__button">
+                        Do you provide additional support?
+                        <span class="accordion__container__arrow">
+                          <img
+                            src="./images/icon-arrow-down.svg"
+                            class="accordion__arrow"
+                            alt="Icon arrow"
+                          />
+                        </span>
+                      </button>
+                    </h2>
+                    <div class="accordion__collapse d__none">
+                      <div class="accordion__body">
+                        <p class="test">
+                          Chat and email support is available 24/7. Phone lines
+                          are open during normal business hours.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="divider" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg__black" id="footer">
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          ref="no-referrer"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by
+        <a href="https://manuelgaitan.com" target="_blank" ref="no-referrer"
+          >Manuel Gaitán</a
+        >
+      </p>
+    </footer>
+    <script src="./js/functions.js"></script>
+  </body>
+</html>
